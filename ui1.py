@@ -1,0 +1,18 @@
+from tkinter import *
+
+root=Tk()
+mylabel1=Label(root,text="one",bg="red")
+mylabel2=Label(root,text="two",bg="blue")
+mylabel1.pack(fill=X)
+mylabel1.pack(fill=Y)
+mylabel2.pack(fill=Y)
+topframe=Frame(root)
+topframe.pack()
+bottomframe=Frame(root)
+bottomframe.pack(side=BOTTOM)
+button1=Button(topframe,text="button1",fg="red",bg="black")
+button2=Button(bottomframe,text="button2",fg="green",bg="black")
+button1.pack()
+button2.pack(side=BOTTOM)
+#root.Size("600x200")
+root.mainloop()
